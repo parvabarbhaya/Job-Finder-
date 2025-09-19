@@ -36,33 +36,3 @@ Here are the main libraries and tools I used to build this:
 
 8. python-dotenv: To manage the API key.
 
-
-*-- main (production)
-|
-| *-- feature/sentiment-analysis-model (development branch)
-| |
-| *-- data preprocessing and model training
-| |
-| *-- saving model to .pkl files
-| |
-*-- merge from feature/sentiment-analysis-model
-|
-| *-- feature/flask-app-development (development branch)
-| |
-| *-- user input handled
-| |
-| *-- API call to fetch news
-| |
-| *-- model integrated to predict sentiment
-| |
-*-- merge from feature/flask-app-development
-|
-| *-- feature/database-integration (development branch)
-| |
-| *-- sentiment predictions stored in SQLite database
-| |
-| *-- results displayed on a new page
-| |
-*-- merge from feature/database-integration
-|
-*-- final production-ready code on main
