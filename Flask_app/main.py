@@ -11,6 +11,7 @@ load_dotenv()
 
 
 csv_path = os.getenv('path_to_csv_file')
+# news_api = os.getenv('news_api_key')
 
 
 
@@ -30,7 +31,7 @@ app = Flask(__name__)
 def Home_page():
     if request.method =='POST':
         query = request.form['query']
-        df = fetch_news(query)
+        fetch_news(query)
 
         data_deployment(csv_path,text_preprocessing,vectorizer ,sentimental_model)
         return redirect(url_for('data_showing_func'))

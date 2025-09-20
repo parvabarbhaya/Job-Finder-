@@ -34,7 +34,7 @@ def fetch_news(query,page_size=10):
 # preprocesing P1 Textpreprocessing , Lower cace , and implementing regex on whole text . 
 import pandas as pd
 import nltk
-from nltk.stem import PorterStemmer
+# from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 import re 
